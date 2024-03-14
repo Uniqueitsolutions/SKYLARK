@@ -1,0 +1,14 @@
+RewriteEngine on
+
+RewriteRule ^Home$ index.php [NC,L]
+RewriteRule ^About$ about_us.php [NC,L]
+RewriteRule ^Products$ product.php [NC,L]
+RewriteRule ^Export$ export.php [NC,L]
+RewriteRule ^E-catalogue$ download.php [NC,L]
+RewriteRule ^Tiles-Calculator$ https://tilescalculators.com/ [NC,L]
+RewriteRule ^Paking$ paking.php [NC,L]
+RewriteRule ^Technical$ technical.php [NC,L]
+RewriteRule ^Contact$ contact.php [NC,L]
+
+RewriteRule ^Product/([^/]+)/?$ ourcollection.php?foldername=$1 [NC,QSA,L]
+
